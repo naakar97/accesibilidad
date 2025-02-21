@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación de Código HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Comparación de Código HTML</h1>
+        <p class="text-center">Aquí puedes visualizar la versión original y la versión mejorada del código HTML con accesibilidad.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">Código Antiguo</h2>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Galería de Noticias ATOM&lt;/title&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav class="navbar navbar-dark bg-dark"&gt;
+        &lt;a class="navbar-brand" href="#"&gt;Noticias ATOM&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;div class="container mt-5"&gt;
+        &lt;input type="text" placeholder="URL del feed"&gt;
+        &lt;button&gt;Cargar&lt;/button&gt;
+        &lt;div id="newsContainer"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-center">Código Mejorado</h2>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Galería de Noticias ATOM&lt;/title&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav class="navbar navbar-dark bg-dark" role="navigation" aria-label="Menú principal"&gt;
+            &lt;a class="navbar-brand" href="#"&gt;Noticias ATOM&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main class="container mt-5"&gt;
+        &lt;section aria-labelledby="feedInputLabel"&gt;
+            &lt;label id="feedInputLabel" for="feedUrl" class="visually-hidden"&gt;Ingrese la URL del feed&lt;/label&gt;
+            &lt;input type="url" id="feedUrl" placeholder="URL del feed" aria-required="true"&gt;
+            &lt;button aria-label="Cargar noticias del feed"&gt;Cargar&lt;/button&gt;
+        &lt;/section&gt;
+        &lt;section id="newsContainer" aria-live="polite"&gt;&lt;/section&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
