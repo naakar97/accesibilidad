@@ -2,7 +2,12 @@
 
 Este documento describe las mejoras realizadas en el código HTML de la aplicación "Galería de Noticias ATOM" para mejorar la accesibilidad, la usabilidad y la estructura semántica de la página.
 ## PROMPT UTILIZADO
-Añademe atributos aria para formularios y botones y mejora la semantica de la pagina usando etiquetas HTML5 asi como la correcta estructura de encabezados tambien implementa controles de accesibilidad en la navegacion por teclado para las personas con discapacidad o cualquier cosa que cubra los niveles A,AA y AAA.
+Añadir atributos ARIA correspondientes a los elementos del formulario, botones, imágenes y enlaces.
+Mejorar la semántica de la página usando etiquetas HTML5 adecuadas como <header>, <main>, <section>, etc.
+Asegurarse de que los textos alternativos de las imágenes sean descriptivos.
+Verificar la correcta estructura del documento (uso adecuado de encabezados <h1>, <h2>, etc.).
+Implementar controles de contraste, accesibilidad en la navegación por teclado, y cualquier otra recomendación que cubra los niveles A, AA y AAA.
+Aplica el prompt en tu IDE para que el asistente realice las modificaciones pertinentes en el código HTML.
 ## Cambios realizados
 
 ### 1. Mejora de la estructura semántica
